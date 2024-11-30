@@ -5,11 +5,14 @@
       body {
         margin: 0;
         font-family: Arial, sans-serif;
+        text-align: center; /* Centers all text within the body */
       }
       nav {
         background-color: #f8f9fa;
         padding: 10px 20px;
         border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: center; /* Centers the navigation links */
       }
       nav ul {
         list-style-type: none;
@@ -29,12 +32,24 @@
       nav ul li a:hover {
         color: #007BFF;
       }
+      .image-container {
+        display: flex;
+        justify-content: center; /* Centers the image horizontally */
+        margin-top: 20px; /* Adds some space above the image */
+      }
+      .image-container img {
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 100%; /* Ensures responsiveness */
+        height: auto; /* Maintains aspect ratio */
+      }
     </style>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="orlyfavday.html">Orly's Favorite Day</a></li>
+        <li><a href="orly_favday.html">Orly's Favorite Day</a></li>
         <li><a href="orlyoutfits.html">Orly's Favorite Outfits</a></li>
         <li><a href="orlyhobbies.html">Orly's Favorite Hobbies</a></li>
         <li><a href="favperson.html">Orly's Favorite Person</a></li>
@@ -42,10 +57,13 @@
     </nav>
 
     <h1>I'm Caesar Alexander U. Ventura!</h1>
-    <p>This is my site about my dog Orly</p>
+    <h2>Welcome to my site about my dog Orly!</h2>
 
-    <img src="C:\Users\zarcven\Desktop\zboy\orly\467129861_565827772731467_5405547076806971226_n.jpg" 
-         width="300" 
-         height="500">
+    <div class="image-container">
+      <img src="C:\Users\zarcven\Desktop\zboy\orly\467129861_565827772731467_5405547076806971226_n.jpg" 
+           width="300" 
+           height="500" 
+           alt="Orly">
+    </div>
   </body>
 </html>
